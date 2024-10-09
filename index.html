@@ -79,7 +79,7 @@
           <div>
            <h1 class="about-heading">About Me</h1>
           </div> 
-          <img src="talal nafees avatar.png" alt="image" />
+          <img src="file:///E:/webdev/portfolio/files2/talal%20nafees%20avatar.png" alt="image" />
           <p>
            I'm a Front-End Developer based in Pakistan, specializing in creating dynamic and visually engaging web experiences. I enjoy transforming complex design concepts into clean, user-friendly interfaces and delivering seamless interactions.
           </p>
@@ -143,7 +143,7 @@
       </div>
       <div class="portfolio-content container">
         <div class="proj-1">
-          <img src="Screenshot 2024-10-06 133111.png">
+          <img src="file:///E:/webdev/portfolio/files2/Screenshot%202024-10-06%20133111.png">
           <div class="proj1-details">
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
@@ -158,7 +158,7 @@
         </div>
         
         <div class="proj-2">
-          <img src="Screenshot 2024-10-06 125533.png">
+          <img src="file:///E:/webdev/portfolio/files2/Screenshot%202024-10-06%20125533.png">
           <div class="proj2-details">
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
@@ -178,15 +178,40 @@
   <div class="contact" id="contact-me">
     <div class="container">
       <div class="contact-content">
+        <!-- Contact Me Header -->
         <h2>Contact Me</h2>
-        <p class="mail">
-          Get in touch with me <i class="fas fa-arrow-right"></i> talalnafees55@gmail.com
-        </p>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+          <!-- Pre-filled Talal Nafees' Name -->
+          <div class="mb-4 relative">
+              <i class="fas fa-user absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+              <input type="text" value="Talal Nafees" class="pl-10 w-full py-3 text-gray-200 bg-gray-700 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" readonly>
+          </div>
+          <!-- Sender's Gmail ID Input -->
+          <div class="mb-4 relative">
+              <i class="fas fa-envelope absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+              <input type="email" name="email" placeholder="Your Gmail ID" pattern="[a-z0-9._%+-]+@gmail\.com" title="Only Gmail addresses are allowed" required class="pl-10 w-full py-3 text-gray-200 bg-gray-700 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+
+          <!-- Message Textarea -->
+          <div class="mb-4">
+              <textarea name="message" placeholder="Message" class="w-full py-3 px-4 text-gray-200 bg-gray-700 rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          </div>
+
+          <!-- Hidden fields required by Web3 Forms -->
+          <input type="hidden" name="access_key" value="743b2130-5854-4261-ba33-5efe1b895054">
+          <input type="hidden" name="subject" value="New Contact Form Submission">
+          <input type="hidden" name="redirect" value="https://web3forms.com/success"> <!-- You can change this URL -->
+
+          <!-- Send Message Button -->
+          <button type="submit" class="w-full py-3 bg-teal-500 text-white font-semibold rounded-full hover:bg-teal-600 transition-colors">
+              Send Message
+          </button>
+      </form>
+        <!-- Links to social media -->
         <p class="links">Or find me on:</p>
-        <a href="https://pk.linkedin.com/in/talal-nafees" target="blank"><i class="fab fa-linkedin">
-            Linkedin</i></a>
+        <a href="https://pk.linkedin.com/in/talal-nafees" target="blank"><i class="fab fa-linkedin">Linkedin</i></a>
         <a href="https://github.com/talal-nafees" target="blank"><i class="fab fa-github"></i> Github</a>
-        
       </div>
     </div>
   </div>
