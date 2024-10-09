@@ -119,6 +119,8 @@ header {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto; 
 }
 
 .about-content p {
